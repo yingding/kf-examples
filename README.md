@@ -16,5 +16,6 @@ Please double check whether the `kfp-server-api 1.6.2` is outdated.
 
 * For KF 1.4.1, `kfp-server-api 1.7.1` are necessary.
 * For KF 1.5.1, `kfp-server-api 1.8.2` are necessary.
+* For KF 1.6.1, KF 1.7.0 `kfp-server-api 1.8.5` are necessary.
 
 The major version number to the kfp-server backend shall match, so that a pipeline can be started.
