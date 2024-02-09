@@ -9,7 +9,9 @@ This workshop introduces the basics regarding Kubeflow Notebook and Kubeflow Pip
 1. [Create, Monitor, Restart, Connect (Workbench: Jupyter Notebook)](./workbench1.md)
 2. [Install, upgrade workbench python packages](./workbench2.md)
 3. [Share Data Volume in workbenches](./workbench3.md)
-4. 
+4. [Git Versioning and Env variable](./workbench4.md)
+5. [Python notebook](./workbench5.md)
+
 ## 4. Install and upgrade Python Packages
 
 * [Kubeflow Pipeline](./KubeflowPipeline.md)
