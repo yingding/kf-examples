@@ -15,7 +15,7 @@ Notebooks -> "Choose a Namespace" ->
 | CPU: | 0,2 |
 | RAM in GiB: | 0,5 |
 
-| Data Volumes | Input |
+| Workspace Volume | Input |
 |:--- | :--- |
 | New volume | |
 | Type | Empty volume |
