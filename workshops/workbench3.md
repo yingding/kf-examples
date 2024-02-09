@@ -1,4 +1,4 @@
-# Shared Volume and Notebook
+# Shared Data Volume in Workbenches
 
 ## 1. Create a shared volume
 
