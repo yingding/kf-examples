@@ -28,7 +28,7 @@ The current `juyterlab` version is `3.4.3` from the default Kubeflow Jupyternote
 
 Lets upgrade it to version `3.6.7`
 
-In our opened terminal, you shall see the `base` conda env is activated. 
+In the opened terminal, you shall see the `base` conda env is activated. 
 Lets type in:
 ```shell
 # show python path
@@ -46,10 +46,10 @@ Now close the `Workbench/Jupyter Notebook` Tab and restart the workbench server 
 ![](./images/workbench1_stop.png)
 ![](./images/workbench1_start.png)
 
-We can connect to the workbench again, by click on `CONNECT`
+You can connect to the workbench again, by click on `CONNECT`
 ![](./images/workbench1_stop.png)
 
-We can see the jupyterlab version by
+You can see the jupyterlab version by
 1. Click on `Help` menu button
 2. Click on `About JupyterLab` to see the current JupyterLab version
 
