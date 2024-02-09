@@ -195,8 +195,25 @@ In this quota output example `2300m` means `2.3` CPU time in seconds are used (U
 ### 4.2 Delete the workbench
 Since we don't need this jupyter notebook anymore, we can also delete it.
 
-1. delete the workbench by click on the 
+1. delete the workbench by click on the `delete` button after the workbench is stopped.
 
+![](./images/workbench1_start.png)
+
+### 4.3 Delete the Workspace Volume
+
+Navigate back to "kubeflow UI dashboard" -> "Volumes" sidebar menu
+
+You can see that the created "test-volume" workspace is still there, even after you have deleted the workbench. 
+
+This "test-volume" can be used as workspace volume for new workbench to access the existing data inside this workspace volume.
+
+Since it is not needed anymore in this tutorial, you can delete it by:
+1. Click on `delete` button 
+![](./images/workbench2_delete_volume.png)
+
+**Important:**
+* You noticed that in the "Used by" column of the `test-volume` there is no reference to a workbench, this indicate that the volume is not attached to any workbench or pod, it is safe to delete.
+* You have a quota of "5" volume in storage class `homedir` by default in the namespace, remove the volume you don't need, or contact your kubeflow admin to get more quota for the volume.
 
 
 
