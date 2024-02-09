@@ -46,7 +46,7 @@ It is possible to see the events during the creation of `Notebook/Workbench`.
 ![workbench events](./images/workbench1_events_monitoring.png)
 
 **Important:**
-* EVENTS Logs, can be very valuable information to forward to `admin` team, should you encounter any issue to start a workbench
+* `EVENTS` tab can contain valuable information to forward your `admin` team, should you encounter any issue to start a workbench
 
 Please also visit `OVERVIEW`, `LOGS` tab to contain information to your workbench, and the logs details while working with your workbench.
 
