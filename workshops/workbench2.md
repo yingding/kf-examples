@@ -41,9 +41,23 @@ python3 -m pip install --upgrade pip;
 python3 -m pip install --user --upgrade jupyterlab==3.6.7 kfp==1.8.22;
 ```
 
-Now close the `Workbench/Jupyter Notebook` Tab and restart the workbenchserver
+Now close the `Workbench/Jupyter Notebook` Tab and restart the workbench server through `stop` and `start`
 
+![](./images/workbench1_stop.png)
+![](./images/workbench1_start.png)
 
+We can connect to the workbench again, by click on `CONNECT`
+![](./images/workbench1_stop.png)
+
+We can see the jupyterlab version by
+1. Click on `Help` menu button
+2. Click on `About JupyterLab` to see the current JupyterLab version
+
+Now you shall see the `Jupyterlab` is upgraded to `3.6.7`
+![Upgraded Juypterlab](./images/workbench2_upgraded_jupyterlab.png)
+
+**Important:**
+* it is important to notice, that the jupyterlab version is updated after the workbench server restart, since we used `--user --upgrade ` flag during the upgrade process. More details about this please visit the next section.
 
 ## 3. Install and Upgrade Python packages
 
