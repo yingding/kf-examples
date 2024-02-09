@@ -6,7 +6,7 @@ This workshop introduces the basics regarding Kubeflow Notebook and Kubeflow Pip
 ## Structure of the Workshop
 
 ### Notebook Workbench Basic 
-1. [Create, Monitor, Connect (Workbench / Jupyter Notebook)](./workbench1.md)
+1. [Create, Monitor, Connect (Workbench: Jupyter Notebook)](./workbench1.md)
 2. [Install, upgrade workbench python packages](./workbench2.md)
 
 4. 
