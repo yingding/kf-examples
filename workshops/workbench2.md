@@ -53,7 +53,7 @@ We can see the jupyterlab version by
 1. Click on `Help` menu button
 2. Click on `About JupyterLab` to see the current JupyterLab version
 
-Now you shall see the `Jupyterlab` is upgraded to `3.6.7`
+Now you shall see the `JupyterLab` is upgraded to `3.6.7`
 ![Upgraded Juypterlab](./images/workbench2_upgraded_jupyterlab.png)
 
 **Important:**
