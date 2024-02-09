@@ -1,4 +1,4 @@
-# Install and upgrade workbench packages
+# Install, upgrade workbench python packages
 
 ## 1. Terminal basics
 
