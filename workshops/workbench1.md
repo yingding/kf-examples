@@ -33,11 +33,22 @@ Click on "LAUNCH" to create a `Notebook Server / Workbench`
 
 You will see a `Notebook/Workbench'` is created in your namespace, the status shows a wheel spinning.
 
-## 2. Monitor the Workbench events
+## 2. Monitor the Workbench events, logs
 
 It is possible to see the events during the creation of `Notebook/Workbench`.
 
-... (TODO) make screenshots
+1. Click on the name e.g. `test` of the workbench, to see the `details` of a workbench.
+
+![open event logs](./images/workbench1_stop.png)
+
+2. Click on the tab `EVENTS` to see the start events of your workbench
+
+![workbench events](./images/workbench1_events_monitoring.png)
+
+**Important:**
+* EVENTS Logs, can be very valuable information to forward to `admin` team, should you encounter any issue to start a workbench
+
+Please also visit `OVERVIEW`, `LOGS` tab to contain information to your workbench, and the logs details while working with your workbench.
 
 ## 3. Restart the Workbench
 
@@ -53,13 +64,13 @@ Through `stop` and `start`, you can restart a workbench.
 
 ## 4. Connect the Workbench 
 
-After the workbench is created successfully, you will see a check mark before the workbench.
+After the workbench is created (or restarted) successfully, you will see a check mark before the workbench.
 
 ![workbench successfully created](./images/workbench1_created_successfully.png)
 
-Click on `CONNECT` to connect with the workbench, you will see a new tab opens up.
+Click on `CONNECT` at the end of workbench to connect with the workbench, you will see a new tab opens up.
 
-Note:
+**Important:**
 * Sometimes you may not connect with workbench due to session and networking issues successfully
 
 Workaround:
