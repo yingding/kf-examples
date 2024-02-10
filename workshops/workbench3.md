@@ -95,7 +95,7 @@ ls -alF
 You can see, the `share-data` volume is mounted in `/home/jovyan/shared-data`.
 
 **Important**
-* Allways mount your shared data volume unter path `/home/jovyan`, not at any system partition path.
+* Allways mount your shared data volume at the path `/home/jovyan`, not at any system partition path.
 
 ### 2.3 Put data into notebook1 shared data volume
 
