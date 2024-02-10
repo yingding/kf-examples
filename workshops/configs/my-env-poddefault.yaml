@@ -1,0 +1,14 @@
+apiVersion: kubeflow.org/v1alpha1
+kind: PodDefault
+metadata:
+  name: my-env-secret
+  labels:
+    my-env-secret: "true"
+spec:
+  desc: add-my-env-secret
+  selector:
+    matchLabels:
+      my-env-secret: "true"
+  env:
+    - name: S3_ENDPOINT
+      value: "https://s3-medver.med.uni-muenchen.de"
