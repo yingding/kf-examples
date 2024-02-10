@@ -126,7 +126,45 @@ Let's `CONNECT` to our recreated `test` notebook
 
 1. You shall see that our tutorial git repository is in the recreated notebook, since you attached the workspace volume prevously, so you still have the data inside the prevous workspace volume.
 
-2. Let's open a terminal
+2. Let's open a terminal and type:
+```shell
+env | grep "S3_ENDPOINT"
+```
+you will see that your `S3_ENDPOINT` env variable is availabe in this workbench (jupyterlab notebook).
+
+If you want to use some env variable constantly in different workbench, you can create PodDefault in your namespace and select these PodDefaults in the "Advanced Options, Configuration" to mount env variable into workbenches.
+
+3. Let's see the token mounted by the `Allow access to Kubeflow Pipelines` PodDefault in terminal:
+
+```shell
+cd /var/run/secrets/kubeflow/pipelines
+ls -alF
+```
+
+4. You can remove the PodDefault `my-env-poddefault.yaml`
+
+You shall still leave `Allow access to Kubeflow Pipelines` PodDefault untouched, since you will use this in later tutorial section for applying kubeflow pipeline.
+
+You can remove the PodDefault from your namespace by type the following commands in the terminal:
+```shell
+MY_NAMESPACE=<your-namespace>;
+# double check namespace is right
+echo ${MY_NAMESPACE}
+kubectl -n ${MY_NAMESPACE} delete -f $HOME/kf-examples/workshops/configs/my-env-poddefault.yaml
+```
+
+**Important:**
+* For now on, you shall not be able to select the removed PodDefault for other workbenches during the creation.
+* You can still see the env variable mounted in the current workbench from terminal `env | grep "S3_ENDPOINT"`, even after teh removal of PodDefault, since the environment variable is created during the creation time of the Kubernetes pod, so you still have the env in your workbench pod.
+
+## 5 (Optional) Clean up
+
+If you want to further proceed with the next optional section, please go on.
+
+Otherwise, you shall clean up the resources to gain `karma` points and don't waste cpu resources.
+
+1. `stop` and `delete` the current `test` notebook
+2. `delete` the workspace volume `test-volume` of the `test` notebook.
 
 
 
