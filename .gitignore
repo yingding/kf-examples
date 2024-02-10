@@ -1,6 +1,6 @@
 **/sdkV1/*.yaml
 **/sdkV2/*.yaml
 *.csv
-.ipynb_checkpoints/
-~/tensorflow_datasets/
+**/.ipynb_checkpoints/
+**/tensorflow_datasets/
 **/compiled/
