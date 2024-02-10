@@ -10,7 +10,7 @@ This workshop introduces the basics regarding Kubeflow Notebook and Kubeflow Pip
 2. [Install, upgrade workbench python packages](./workbench2.md)
 3. [Share Data Volume in workbenches](./workbench3.md)
 4. [Git Versioning and Env variable](./workbench4.md)
-5. [Python notebook](./workbench5.md)
+5. [Working with python juypter notebook](./workbench5.md)
 
 ## 4. Install and upgrade Python Packages
 
