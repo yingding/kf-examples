@@ -93,7 +93,7 @@ If we install or update a python packages using
 ```shell
 # update pip
 python3 -m pip install --upgrade pip;
-# update the scipy package from 1.7.0 to 1.12.0
+# update the scipy package from 1.7.0 to 1.10.1
 python3 -m pip install scipy==1.10.1
 python3 -c 'import scipy; print(f"scipy.__version__: {scipy.__version__}")'
 ```
