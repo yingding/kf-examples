@@ -136,14 +136,14 @@ Click on "Start"
 
 ## 4. Summary
 
-You have learning in this tutorial
+You have learned in this tutorial
 * Create a Jupyter Workbench with Pipeline Access
 * Start your first Kubeflow Pipeline using KFP python SDK from a Jupyter Notebook
 * Examing the Run details of a Kubeflow Pipeline run
 * Download the Yaml representation of Kubeflow Pipeline created by Python SDK
 * Upload the Yaml representation of Kubeflow Pipeline via Pipelines UI
 * Create a new run from the Kubeflow Pipeline with input params
-* Examing the Run details from Experiments (KFP), Kubeflow Dashboard UI menu
+* Exam the Run details from Experiments (KFP), Kubeflow Dashboard UI menu
 
 
  
