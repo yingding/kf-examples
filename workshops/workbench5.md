@@ -1,10 +1,11 @@
 # Working with python juypter notebook
 
-If you have keep the `test` juypterlab workbench, you can proceed.
+If you have kept the `test` juypterlab workbench from prevous tutorial, you can proceed.
 
 If you have created a new juypterlab workbench, you can download the workshop git repository from the terminal with:
 ```shell
-git clone https://github.com/yingding/kf-examples
+cd $HOME;
+git clone https://github.com/yingding/kf-examples;
 ```
 
 ## Access the python notebook example
