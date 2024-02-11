@@ -89,7 +89,7 @@ Let's go back to the jupyter workbench by switch back the opened tab in browser.
 
 ![](./images/pipeline1_sum_pipeline_yaml.png)
 
-2. You can download `sum.yaml` by right mous click on the file in Jupyter file browser, and click on `Dowload` and save it in a location of your choose.
+2. You can download `sum.yaml` by right mous click on the file in Jupyter file browser, and click on `Dowload` and save it in a location of your choice.
 
 ![](./images/pipeline1_download_pipeline_yaml.png)
 
