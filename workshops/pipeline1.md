@@ -129,7 +129,7 @@ Click on "Start"
 ![](./images/pipeline1_runs_demo_run.png)
 
 
-8. Click on the `top` run, you can following up the run info in the pipeline UI run view and see the logs of components in this pipeline run.
+8. Click on the `top` run you just started.  You can follow up the `run info` in the pipeline UI `run` view and see the logs of components in this pipeline run.
 
 ![](./images/pipeline1_demo_sum_run_details.png)
 
