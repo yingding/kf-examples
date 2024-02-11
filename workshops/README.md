@@ -28,7 +28,7 @@ This workshop introduces the basics regarding Kubeflow Notebook and Kubeflow Pip
 
 ## 3. Attributions
 
-My best thanks to **Andreea Munteanu** from Canonical and **[Ajinkya Bobade](https://github.com/sponsors/ajinkya933?frequency=one-time&sponsor=ajinkya933)** from Kubeflow Community for sending me their internal workshop slides and examples. I have incorperated these valuable insights into the content of this workshop with hands-on tutorials.
+My best thanks to **Andreea Munteanu** from Canonical and **[Ajinkya Bobade](https://github.com/ajinkya933)** from Kubeflow Community for sending me their internal workshop slides and examples. I have incorperated these valuable insights into the content of this workshop with hands-on tutorials.
 
 My deepest thanks to **Prof. Dr. Michael Ingrisch** and **Dr. Balthasar Schachtner** for coordinating and facilitating this kubeflow workshop. Without their help, this workshop will not be possible. Also my thanks to **Simon Leutner** and **Thomas Kluge** for their support in the Kubeflow system operation and maintenance on-site.
 
