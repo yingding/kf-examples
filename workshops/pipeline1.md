@@ -49,4 +49,14 @@ Notice:
 
 Let's `CONNECT` to the created JupyterLab workbench `pipeline-test` with the kubeflow access token mounted.
 
-1. Open a new 
+You can create a Python Jupyter Notebook from the `Launcher` by click on the Notebook `Python 3`.
+
+In this tutorial, you will start with a provided `notebook` to start your first pipeline.
+
+1. Fetch the workshop git code repository by typing the following in terminal in the `pipeline-test` JupyterLab workbench:
+```shell
+cd $HOME;
+git clone https://github.com/yingding/kf-examples;
+```
+
+2. Navigate the `kf-examples/sdkV1/`
