@@ -7,7 +7,7 @@ This workshop introduces the basics regarding Kubeflow Notebook and Kubeflow Pip
 
 ## 1. Agenda of Kubeflow Workshop (Basics)
 
-### Workbench (JupyterLab) Basics 
+### Kubeflow Workbench (JupyterLab) Basics 
 1. [Create, Monitor, Restart, Connect (Workbench: Jupyter Notebook)](./workbench1.md)
 2. [Install, upgrade workbench python packages](./workbench2.md)
 3. [Share Data Volume in workbenches](./workbench3.md)

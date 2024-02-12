@@ -133,8 +133,15 @@ Click on "Start"
 
 ![](./images/pipeline1_demo_sum_run_details.png)
 
+## 4. (Optiona Clean up)
 
-## 4. Summary
+If you want to learn more about Kubeflow Python SDK for building a ML pipeline, please keep the current JupyterLab workbench open, you will use it right away.
+
+If you decided to learn Kubeflow Python SDK in a later time, please remember to clean up your resources:
+* `stop` and `delete`, your kubeflow workbench instance
+* `delete` the associated `workspace` volume of the kubeflow workbench 
+
+## 5. Summary
 
 You have learned in this tutorial
 * Create a Jupyter Workbench with Pipeline Access
