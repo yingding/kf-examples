@@ -1,6 +1,8 @@
 # kf-examples
 this repository contains examples of kubeflow pipeline for the talks at:
+* [Kubeflow Workshop and hands-on tutorials on 23 Feb. 2024](./workshops/README.md)
 * [GDG Cloud Munich October Gathering on 5 Oct. 2022](https://gdg.community.dev/events/details/google-gdg-cloud-munich-presents-october-gathering-1/)
+
 
 # Notebooks
 * exploring-iris-data-notebook: explores the iris dataset used later in the pipelines
