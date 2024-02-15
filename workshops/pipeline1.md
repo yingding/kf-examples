@@ -101,7 +101,7 @@ Let's go back to the jupyter workbench by switch back the opened tab in browser.
 
 | Creat a new pipeline | |
 |:--- | :--- |
-|Pipeline Name: | <yourname>-sum-numbers-pipeline |
+|Pipeline Name: | \<yourname\>-sum-numbers-pipeline |
 |Pipeline Description: | this pipeline sums two float inputs|
 |Upload a file: | < choose your sum.yaml file download previously > |
 
