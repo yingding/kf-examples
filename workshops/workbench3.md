@@ -25,6 +25,10 @@ Navigate to "kubeflow UI dashboard" -> "Volumes" sidebar menu
 * The `Access Mode` must be `ReadWriteMany`, since you will attach the same volume into different pods/workbenches
 * For a workspace created for a workbench, you have choose `ReadWriteOnce` since the workspace volume is only attached to one workbench at a time.
 
+**Reference:**
+* Detailed information about `Access Mode` is availabe at https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes
+
+
 **Storage Classes:**
 
 In the current Kubeflow manifests deployment, you can create volume on 2 storage class

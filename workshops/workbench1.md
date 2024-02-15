@@ -28,13 +28,15 @@ Notebooks -> "Choose a Namespace" ->
 
 Note: 
 * It is important to add prefix "\<yourname\>-" to the notebook, since you may share a namespace with other users, the name of notebook must be unique inside namespace.
-* Do NOT change the mount path "/home/jovyan"
+* DO NOT change the mount path "/home/jovyan"
+* `Access mode` is the [Kubernetes volume access mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes), `ReadWriteOnce` means it can only read and write by a single pod at a time. 
 
-Click on "LAUNCH" to create a `Notebook Server / Workbench`
+**Important**\
+Click on "LAUNCH" to create a `Notebook Server` (Jupyter Workbench)
 
 ![Connect Workbench](./images/workbench1_connect_1.png)
 
-You will see a `Notebook/Workbench'` is created in your namespace, the status shows a wheel spinning.
+You will see a `Notebook Server` (Jupyter Workbench) is created in your namespace, the status shows a wheel spinning.
 
 ## 2. Monitor the Workbench events, logs
 

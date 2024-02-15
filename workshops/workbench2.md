@@ -190,6 +190,7 @@ In this quota output example `2300m` means `2.3` CPU time in seconds are used (U
 
 1. close the `Workbench` Tab in your browser
 2. stop the workbench by click on the `stop` button.
+
 ![](./images/workbench1_stop.png)
 
 ### 4.2 Delete the workbench
