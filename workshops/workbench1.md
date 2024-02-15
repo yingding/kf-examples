@@ -1,5 +1,7 @@
 # Kubeflow Notebook/Workbench: Create, Monitor, Restart, Connect
 
+The Kubeflow instance, you will use for this particular workshop is availabe through `VPN`, you can find the detail instructions guiding you to login to Kubeflow at https://gitlab.lrz.de/core/core#access
+
 ## 1. Create a Kubeflow Jupyter Notebook
 
 Notebooks -> "Choose a Namespace" -> 
@@ -9,7 +11,7 @@ Notebooks -> "Choose a Namespace" ->
 
 | Basic Category | Input |
 |:--- | :--- |
-| Name: | test |
+| Name: | \<yourname\>-test |
 | Type: | JupyterLab |
 | Custom Notebook: | kubeflownotebookswg/jupyter-scipy:v1.7.0 |
 | CPU: | 0,2 |
@@ -25,6 +27,7 @@ Notebooks -> "Choose a Namespace" ->
 | Mount path | /home/jovyan |
 
 Note: 
+* It is important to add prefix "\<yourname\>-" to the notebook, since you may share a namespace with other users, the name of notebook must be unique inside namespace.
 * Do NOT change the mount path "/home/jovyan"
 
 Click on "LAUNCH" to create a `Notebook Server / Workbench`
@@ -37,7 +40,7 @@ You will see a `Notebook/Workbench'` is created in your namespace, the status sh
 
 It is possible to see the events during the creation of `Notebook/Workbench`.
 
-1. Click on the name e.g. `test` of the workbench, to see the `details` of a workbench.
+1. Click on the name e.g. `<yourname>-test` of the workbench, to see the `details` of a workbench.
 
 ![open event logs](./images/workbench1_stop.png)
 
@@ -69,6 +72,8 @@ After the workbench is created (or restarted) successfully, you will see a check
 ![workbench successfully created](./images/workbench1_created_successfully.png)
 
 Click on `CONNECT` at the end of workbench to connect with the workbench, you will see a new tab opens up.
+
+![workbench tab open after connect](./images/workbench1_connect_notebook_tab_open.png)
 
 **Important:**
 * Sometimes you may not connect with workbench due to session and networking issues successfully

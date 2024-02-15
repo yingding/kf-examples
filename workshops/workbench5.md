@@ -1,6 +1,6 @@
 # Working with python juypter notebook
 
-If you have kept the `test` juypterlab workbench from prevous tutorial, you can proceed.
+If you have kept the `<yourname>-test` juypterlab workbench from prevous tutorial, you can proceed.
 
 If you have created a new juypterlab workbench, you can download the workshop git repository from the terminal with:
 ```shell

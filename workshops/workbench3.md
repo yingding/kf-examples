@@ -50,7 +50,7 @@ Let's attach this shared volume to a notebook.
 
 | Basic Category | Input |
 |:--- | :--- |
-| Name: | notebook1 |
+| Name: | \<yourname\>-notebook1 |
 | Type: | JupyterLab |
 | Custom Notebook: | kubeflownotebookswg/jupyter-scipy:v1.7.0 |
 | CPU: | 0,2 |
@@ -79,7 +79,7 @@ Let's attach this shared volume to a notebook.
 
 ### 2.2 View shared data volume in notebook1
 
-After `CONNECT` to the `notebook1` workbench
+After `CONNECT` to the `<yourname>-notebook1` workbench
 
 You can see the shared data volume name `shared-data` is show in the jupyterlab file brower.
 
@@ -114,7 +114,7 @@ Let's attach the prevous shared volume to another notebook.
 
 | Basic Category | Input |
 |:--- | :--- |
-| Name: | notebook2 |
+| Name: | \<yourname\>-notebook2 |
 | Type: | JupyterLab |
 | Custom Notebook: | kubeflownotebookswg/jupyter-scipy:v1.7.0 |
 | CPU: | 0,2 |
@@ -143,7 +143,7 @@ Let's attach the prevous shared volume to another notebook.
 
 ### 2.4 View shared data volume in notebook2
 
-Navigate to "Kubeflow UI Dashboard" -> "Notebooks" -> "CONNECT" notebook2
+Navigate to "Kubeflow UI Dashboard" -> "Notebooks" -> "CONNECT" to "\<yourname\>-notebook2"
 
 You can now see the content of the previous uploaded file inside the shared data volume `shared-data`
 by click on the shared file by notebook1.
@@ -160,10 +160,10 @@ by click on the shared file by notebook1.
 
 Let's clean up thing, free the resource quota and do it one after another slowly.
 
-1. stop `notebook1`, delete `notebook1`
-2. stop `notebook2`, delete `notebook2`
-3. delete the volume `notebook1-volume`
-4. delete the volume `notebook2-volume`
+1. stop `<yourname>-notebook1`, delete `<yourname>-notebook1`
+2. stop `<yourname>-notebook2`, delete `<yourname>-notebook2`
+3. delete the volume `<yourname>-notebook1-volume`
+4. delete the volume `<yourname>-notebook2-volume`
 5. delete the volume `shared-data`
 
 

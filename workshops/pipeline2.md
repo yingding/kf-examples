@@ -6,10 +6,10 @@ In the Kubeflow Pipeline SDK v1, one way to run a ML tasks is to use a `Python f
 
 As its name suggested, you can define a Python function, and executed it in a base container python image.
 
-Let's `CONNECT` to the `pipeline-test` JupyterLab workbench, and open the `kf-examples/sdkV1/toy_v1_add.ipynb` file in JupyterLab file browser.
+Let's `CONNECT` to the `<yourname>-pipeline-test` JupyterLab workbench, and open the `kf-examples/sdkV1/toy_v1_add.ipynb` file in JupyterLab file browser.
 
 **Note:**
-* If you deleted `pipeline-test` workbench, please visit the [prevous tuturial seciton](./pipeline1.md) to recreate the workbench again and come back to continue.
+* If you deleted `<yourname>-pipeline-test` workbench, please visit the [prevous tuturial seciton](./pipeline1.md) to recreate the workbench again and come back to continue.
 
 In the `toy_v1_add.ipynb`, you can find the cell block
 ```python

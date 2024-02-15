@@ -9,7 +9,7 @@ Let's create a test notebook
 
 | Basic Category | Input |
 |:--- | :--- |
-| Name: | test |
+| Name: | \<yourname\>-test |
 | Type: | JupyterLab |
 | Custom Notebook: | kubeflownotebookswg/jupyter-scipy:v1.7.0 |
 | CPU: | 0,2 |
@@ -28,7 +28,7 @@ Let's create a test notebook
 
 ## 2 Download workshop git repository
 
-1. Let's `CONNECT` to the `test` notebook
+1. Let's `CONNECT` to the `<yourname>-test` notebook
 2. Open a terminal in juypterlab and type:
 ```shell
 git clone https://github.com/yingding/kf-examples
@@ -37,13 +37,25 @@ git clone https://github.com/yingding/kf-examples
 
 ![](./images/workbench4_git_clone.png)
 
+Note:
+* It is highly recommended to put your code into a code version system such as Git, so that you can sync your code and share it with other teammates. 
+* It is general not recommended to share a notebook with other teammates, but rather use Git to share and merge code. You can still use Jupyter Real-Time Collaboration https://github.com/jupyterlab/jupyter-collaboration to do so on your own responsibility to allow live time edit or jupyter notebooks by multiple users.
+
 ## 3 Apply PodDefault CRD into your namespace
 
 PodDefault is a Kubeflow CRD (Custom Resource Definition) helps to inject env, vars, volumes into pod in kubernetes.
 
+You will need PodDefault to mount access token to be able to connect with Kubeflow Pipeline from a Workbench.
+
+You can also use PodDefault to define access keys as environment variables to access S3 storage, or SQL database.
+
+The advantage of using PodDefault to mount environment variables is that you can define the secrets and access key once, and it can be used in different notebooks or kubeflow pipeline components. These secrets will be mounted as environment variables into the Pods during the pod creation.
+
+
 Reference:
 * PodDefault:  https://github.com/kubeflow/kubeflow/blob/master/components/admission-webhook/README.md
 
+You are still connected with `\<yourname\>-test` Jupyter Workbench.
 1. Open the terminal in JupyterLab, and execute:
 ```shell
 MY_NAMESPACE=<your-namespace>;
@@ -51,9 +63,12 @@ echo ${MY_NAMESPACE}
 ```
 change the `MY_NAMESPCE` bash variable to your real namespace, and double check the output.
 
-If your namespace are set, run the following command in terminal to apply the PodDefault examples for further tutorial sessions.
+If your namespace are set, run the following command in terminal to apply the PodDefault examples:
 ```shell
+# create a S3 storage env variable in Jupyter Notebook
 kubectl -n ${MY_NAMESPACE} apply -f $HOME/kf-examples/workshops/configs/my-env-poddefault.yaml
+
+# create a access token mount in Jupyter Notebook
 kubectl -n ${MY_NAMESPACE} apply -f $HOME/kf-examples/workshops/configs/ml-pipeline-poddefault.yaml
 ```
 
@@ -71,7 +86,7 @@ DON'T panic, it means the PodDefault has already been created and exists in your
 ## 4 Re-create the test notebook and attach PodDefaults
 Let's `stop` and `delete` the `test` notebook, but leave the workspace volume untouched.
 
-Create the `test` notebook again, attach the existing workspace volume and PodDefaults:
+Create the `<yourname>-test` notebook again, attach the existing workspace volume and PodDefaults:
 
 1. Navigate to "Kubeflow UI Dashboard" -> "Notebooks" -> "+ New Notebook"
 
@@ -79,7 +94,7 @@ Create the `test` notebook again, attach the existing workspace volume and PodDe
 
 | Basic Category | Input |
 |:--- | :--- |
-| Name: | test |
+| Name: | \<yourname\>-test |
 | Type: | JupyterLab |
 | Custom Notebook: | kubeflownotebookswg/jupyter-scipy:v1.7.0 |
 | CPU: | 0,2 |
@@ -122,7 +137,7 @@ Note:
 
 ## 5. View the mounted token partition and ENV variables in test notebook
 
-Let's `CONNECT` to our recreated `test` notebook
+Let's `CONNECT` to our recreated `<yourname>-test` notebook
 
 1. You shall see that our tutorial git repository is in the recreated notebook, since you attached the workspace volume prevously, so you still have the data inside the prevous workspace volume.
 
@@ -150,6 +165,8 @@ You can remove the PodDefault from your namespace by type the following commands
 MY_NAMESPACE=<your-namespace>;
 # double check namespace is right
 echo ${MY_NAMESPACE}
+
+# remove the poddefault from namespace
 kubectl -n ${MY_NAMESPACE} delete -f $HOME/kf-examples/workshops/configs/my-env-poddefault.yaml
 ```
 
@@ -165,6 +182,14 @@ Otherwise, you shall clean up the resources to gain `karma` points and don't was
 
 1. `stop` and `delete` the current `test` notebook
 2. `delete` the workspace volume `test-volume` of the `test` notebook.
+
+## 6 Summary
+
+You have learned:
+* Sharing Code using Git Version System inside Jupyter Workbenches
+* Define and mount reusable environment variable for Jupyter Workbenches with PodDefault
+
+
 
 
 

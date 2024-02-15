@@ -15,7 +15,7 @@ Let's create a Jupyter Notebook first to interact with the Kubeflow Pipeline API
 
 | Basic Category | Input |
 |:--- | :--- |
-| Name: | pipeline-test |
+| Name: | \<yourname\>-pipeline-test |
 | Type: | JupyterLab |
 | Custom Notebook: | kubeflownotebookswg/jupyter-scipy:v1.7.0 |
 | CPU: | 0,2 |
@@ -47,13 +47,13 @@ Notice:
 
 ## 2. Create first kubeflow pipeline
 
-Let's `CONNECT` to the created JupyterLab workbench `pipeline-test` with the kubeflow access token mounted.
+Let's `CONNECT` to the created JupyterLab workbench `<yourname>-pipeline-test` with the kubeflow access token mounted.
 
 You can create a Python Jupyter Notebook from the `Launcher` by click on the Notebook `Python 3`.
 
 In this tutorial, you will start with a provided `notebook` to start your first pipeline.
 
-1. Fetch the workshop git code repository by typing the following in terminal in the `pipeline-test` JupyterLab workbench:
+1. Fetch the workshop git code repository by typing the following in terminal in the `<yourname>-pipeline-test` JupyterLab workbench:
 ```shell
 cd $HOME;
 git clone https://github.com/yingding/kf-examples;
@@ -101,7 +101,7 @@ Let's go back to the jupyter workbench by switch back the opened tab in browser.
 
 | Creat a new pipeline | |
 |:--- | :--- |
-|Pipeline Name: | sum-numbers-pipeline |
+|Pipeline Name: | <yourname>-sum-numbers-pipeline |
 |Pipeline Description: | this pipeline sums two float inputs|
 |Upload a file: | < choose your sum.yaml file download previously > |
 
@@ -109,7 +109,12 @@ Click on `Create`.
 
 ![](./images/pipeline1_ui_upload_create.png)
 
-5. On the opened `sum-numbers-pipeline` plane, click on `Create run`
+Important:
+*  At the current Kubeflow version, the pipeline name is global unique, it is shared among all namespaces.
+* If you receive an error, that pipeline already exists. Change your pipeline name or upload it as a new pipeline version to the existing pipeline.
+* In Kubeflow 1.8.0 there will be private pipeline for namespace in the future.
+
+5. On the opened `<yourname>-um-numbers-pipeline` plane, click on `Create run`
 
 ![](./images/pipeline1_create_run.png)
 
@@ -124,7 +129,7 @@ Click on "Start"
 
 ![](./images/pipeline1_input_param_and_start.png)
 
-7. Examin the `Run` of your started pipeline `sum-numbers-pipeline`
+7. Examin the `Run` of your started pipeline `<yourname>-sum-numbers-pipeline`
 
 ![](./images/pipeline1_runs_demo_run.png)
 
