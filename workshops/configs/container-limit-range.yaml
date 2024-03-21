@@ -1,6 +1,8 @@
 # use limit range to start tensorboard in quotaed user namespace
 # https://github.com/kubeflow/kubeflow/issues/7077
 # 
+# use the following command to apply this configuration from your notebook terminal:
+# kubectl -n <yournamespace> apply -f container-limit-range.yaml
 apiVersion: v1
 kind: LimitRange
 metadata:
