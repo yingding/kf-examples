@@ -1,5 +1,6 @@
 # use limit range to start tensorboard in quotaed user namespace
 # https://github.com/kubeflow/kubeflow/issues/7077
+# https://github.com/kubeflow/pipelines/pull/9089#issuecomment-1499665846
 # 
 # use the following command to apply this configuration from your notebook terminal:
 # kubectl -n <yournamespace> apply -f container-limit-range.yaml
@@ -11,8 +12,8 @@ spec:
   limits:
   - default:
       memory: 256Mi
-      cpu: 125m
+      cpu: 500m
     defaultRequest:
-      memory: 64Mi
-      cpu: 125m
+      memory: 32Mi
+      cpu: 10m
     type: Container
